@@ -8,11 +8,11 @@ namespace ChallengesWithTestsMark8
     {
         public bool CharacterIsALetter(char c)
         {
-            throw new NotImplementedException();
+            return char.IsLetter(c);
         }
-
-        public bool CountOfElementsIsEven(string[] vals)
+       public bool CountOfElementsIsEven(string[]vals)
         {
+        
             if (vals.Length % 2== 0)
             {
                 return true;
@@ -52,7 +52,7 @@ namespace ChallengesWithTestsMark8
                 return 0;
             }
             
-            return numbers.Min() + numbers.Max();      
+            return numbers.Min() + numbers.Max(); 
 
         }
 
